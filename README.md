@@ -47,6 +47,8 @@ To use this bot:
 - Follow the prompts to input the client name you wish to search for.
 - Receive the tender report directly in your Telegram chat.
 
+## Video Demonstration
+[![Watch the video](https://img.youtube.com/vi/l9XVjmpqOqg/0.jpg)](https://youtu.be/l9XVjmpqOqg)
 ## Note
 
 The full functionality involving the PDF report is not shown in the video because, when I achieved that, I was not recording. When I went to do it again, I ran out of credits. If you wish to see the complete capabilities or use the bot for a live demo, please contact me at [bhavyapatel21999@gmail.com](mailto:bhavyapatel21999@gmail.com) or [https://x.com/Bhavya037](https://x.com/Bhavya037).
