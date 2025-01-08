@@ -7,6 +7,7 @@ import os
 
 load_dotenv()
 
+
 async def perform_tender_search(search_term, external_ip, scrapy):
     # Initialize the client
     client = Scrapybara(
@@ -78,10 +79,10 @@ async def perform_tender_search(search_term, external_ip, scrapy):
     response = instance.agent.act(
         cmd=(
             f"Based on the following tender data:\n{formatted_data}\n\n"
-            "Write a detailed report that identifies the suitable contractor type for each tender based on the 'Name of Work'.\n"
+            "Write a detailed report that identifies the suitable contractor type for each tender based on the 'Name of Work' in text file.\n"
             "Write the report in markdown format with the following guidelines:\n"
             "Follow this format for the report:\n\n"
-            "# report tittle"
+            "# <good tittle that describe this report>\n\n"
             "### Tender ID: <Tender ID>\n"
             "- **Suitable Contractor**: <Type of Contractor>\n"
             "- **Explanation**:\n"
@@ -90,11 +91,10 @@ async def perform_tender_search(search_term, external_ip, scrapy):
             "- Use **bold styling** for headings and key terms (e.g., **Tender ID**, **Suitable Contractor**).\n"
             "- Ensure good formatting with new lines for readability.\n\n"
             "Follow these steps when saving the file:\n"
-            "Save this report as a text file in the 'Downloads' folder with the file name 'Report'. "
             "1. Clear any pre-filled text in the file name input field (e.g., 'untitled').\n"
             "2. Ensure the file name is exactly 'Report' and the format is '.txt'.\n"
             "3. Double-check that the file name does not repeat (e.g., avoid 'ReportReport.txt').\n\n"
-            "4. last time make sure saved file is Report.txt"
+            "4. in file format there will be odt selected as defult change that to '.txt'"
         ),
         model="claude",
         include_screenshot=False  # Optional
