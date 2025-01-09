@@ -48,9 +48,7 @@ To use this bot:
 - Receive the tender report directly in your Telegram chat.
 
 ## Video Demonstration
-[![Watch the video](https://img.youtube.com/vi/1H5GpZY7nSa_JsIyfmZzkd-kNZt5EtLKK/0.jpg)](https://www.youtube.com/watch?v=1H5GpZY7nSa_JsIyfmZzkd-kNZt5EtLKK)
-
-## Note
+[Watch the video](https://drive.google.com/file/d/1H5GpZY7nSa_JsIyfmZzkd-kNZt5EtLKK/view?usp=sharing)
 
 If you wish to see the complete capabilities or use the bot for a live demo, please contact me at [bhavyapatel21999@gmail.com](mailto:bhavyapatel21999@gmail.com) or [https://x.com/Bhavya037](https://x.com/Bhavya037).
 
