@@ -4,7 +4,7 @@ import time
 import base64
 from dotenv import load_dotenv
 import os
-
+from markdown_to_pdf import create_tender_pdf
 load_dotenv()
 
 
@@ -84,17 +84,14 @@ async def perform_tender_search(search_term, external_ip, scrapy):
             "Follow this format for the report:\n\n"
             "# <good tittle that describe this report>\n\n"
             "### Tender ID: <Tender ID>\n"
+            "### Estimated Contract Value: <Estimated Contract Value>\n"
             "- **Suitable Contractor**: <Type of Contractor>\n"
             "- **Explanation**:\n"
             "  <Brief explanation of the work and expertise required>\n\n"
             "Ensure the final output follows this format."
             "- Use **bold styling** for headings and key terms (e.g., **Tender ID**, **Suitable Contractor**).\n"
             "- Ensure good formatting with new lines for readability.\n\n"
-            "Follow these steps when saving the file:\n"
-            "1. Clear any pre-filled text in the file name input field (e.g., 'untitled').\n"
-            "2. Ensure the file name is exactly 'Report' and the format is '.txt'.\n"
-            "3. Double-check that the file name does not repeat (e.g., avoid 'ReportReport.txt').\n\n"
-            "4. in file format there will be odt selected as defult change that to '.txt'"
+            "then save the file at home/scrapybara/Report.txt"
         ),
         model="claude",
         include_screenshot=False  # Optional
@@ -105,7 +102,7 @@ async def perform_tender_search(search_term, external_ip, scrapy):
     print(report)
     # Download a file from the instance
     response = instance.file.download(
-        path="/home/scrapybara/Downloads/Report.txt"
+        path="/home/scrapybara/Report.txt"
     )
     downloaded_content = response.content
 
@@ -122,5 +119,7 @@ async def perform_tender_search(search_term, external_ip, scrapy):
     await browser.close()
     await p.stop()
     instance.stop()
-    return decoded_content.decode('utf-8')
+    print(decoded_content.decode('utf-8'))
+    
+    return create_tender_pdf(decoded_content.decode('utf-8'), "output.pdf")
 # Remember to call this function with await and from an asynchronous context

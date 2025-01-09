@@ -34,7 +34,7 @@ This Telegram bot automates the process of searching for tenders on the India-sp
 
 8. **Report Download and Conversion**:
 
-   - The report, written in Markdown, is then converted into a PDF with professional formatting.example:[ouput.pdf](https://github.com/Bhavya031/scrapybara-tenderbot/blob/main/output.pdf)
+   - The report, written in Markdown, is then converted into a PDF with professional formatting. Example: [output.pdf](https://github.com/Bhavya031/scrapybara-tenderbot/blob/main/output.pdf)
 
 9. **Delivery**:
    - Finally, the PDF report is sent to the user on Telegram. In the current demo version, only text is sent due to previous iterations and limitations on Scrapybara credits.
@@ -48,9 +48,10 @@ To use this bot:
 - Receive the tender report directly in your Telegram chat.
 
 ## Video Demonstration
-[![Watch the video](https://img.youtube.com/vi/l9XVjmpqOqg/0.jpg)](https://youtu.be/l9XVjmpqOqg)
+[![Watch the video](https://img.youtube.com/vi/1H5GpZY7nSa_JsIyfmZzkd-kNZt5EtLKK/0.jpg)](https://www.youtube.com/watch?v=1H5GpZY7nSa_JsIyfmZzkd-kNZt5EtLKK)
+
 ## Note
 
-The full functionality involving the PDF report is not shown in the video because, when I achieved that, I was not recording. When I went to do it again, I ran out of credits. If you wish to see the complete capabilities or use the bot for a live demo, please contact me at [bhavyapatel21999@gmail.com](mailto:bhavyapatel21999@gmail.com) or [https://x.com/Bhavya037](https://x.com/Bhavya037).
+If you wish to see the complete capabilities or use the bot for a live demo, please contact me at [bhavyapatel21999@gmail.com](mailto:bhavyapatel21999@gmail.com) or [https://x.com/Bhavya037](https://x.com/Bhavya037).
 
 Thank you for your interest in our Tender Search Bot!

@@ -127,7 +127,7 @@ async def get_or_create_proxy():
         external_ip = create_instance_with_public_ip(**VM_CONFIG)
         print("VM created with IP: ", external_ip)
         proxy_state.update_proxy(external_ip)
-        await asyncio.sleep(20)  # Allow some time for VM to be fully operational
+        await asyncio.sleep(30)  # Allow some time for VM to be fully operational
         return external_ip
     except Exception as e:
         print("Failed to initialize proxy server:", str(e))
